@@ -26,11 +26,27 @@ function generatePassword() {
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Must be between 8 and 128 chracters long! try again.")
   }
- 
+  
   var promptLower = window.prompt("Will this contain lower case letters?");
-  var promptUpper = window.prompt("Will this password contain Upper case Letters")
-  var promptChars = window.prompt("will this password contain characters?")
-  var promptNum = window.prompt("will this password contain numbers")
+    if (promptLower === "yes" || promptLower ==="no"){
+      alert("You must provide a Yes or No");
+    }
+  var promptUpper = window.prompt("Will this password contain Upper case Letters");
+    if (promptUpper != "yes" || promptUpper != "no"){
+      alert("You must provide a Yes or No");
+    }
+    
+    
+    var promptChars = window.prompt("Will this password contain Upper case Letters");
+    if (promptChars != "yes" || promptUpper != "no"){
+      alert("You must provide a Yes or No");
+    }
+     
+    var promptNum = window.prompt("Will this password contain Upper case Letters");
+    if (promptNum != "yes" || promptUpper != "no"){
+      alert("You must provide a Yes or No");
+    }
+  
 
 
   }
