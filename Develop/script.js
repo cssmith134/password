@@ -69,6 +69,12 @@ function generatePassword() {
       userSel = userSel.concat(upper)
     }
 
+    if(promptChars == "yes") {
+      userSel = userSel.concat(char)
+    }
+
+    if(promptNum == "yes")
+      userSel = userSel.concat(num)
     // var userSel = char.concat(num)
     var genpassword = "";
 
