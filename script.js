@@ -35,7 +35,7 @@ function generatePassword() {
     alert("Must be between 8 and 128 chracters long! try again.")
   }
   
-  var promptLower = window.prompt("Will this contain lower case letters?");
+  var promptLower = window.prompt("Will this password contain lower case letters?");
     if (promptLower === "" || promptLower ==="null"){
       alert("You must provide a Yes or No");
     }
